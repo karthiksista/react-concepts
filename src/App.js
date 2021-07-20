@@ -4,6 +4,7 @@ import './style.css';
 import CardHolder from './components/CardHolder';
 import StateExample from './hooks/StateExample/StateExample';
 import UseEffectExample from './hooks/UseEffectExample/UseEffectExample';
+import UseReducerExample from './hooks/UseReducerExample/UseReducerExample';
 
 export default function App() {
   return (
@@ -17,6 +18,10 @@ export default function App() {
 
       <CardHolder title={'useEffect Blitz'}>
         <UseEffectExample />
+      </CardHolder>
+
+      <CardHolder title={'useReducer Blitz'}>
+        <UseReducerExample />
       </CardHolder>
     </div>
   );
