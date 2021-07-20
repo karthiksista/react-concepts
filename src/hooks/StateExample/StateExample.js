@@ -6,9 +6,12 @@ const StateExample = () => {
 
   return (
     <>
-      <div>{title}</div>
+      <div style={{ padding: '10px' }}>{title}</div>
       <div>
-        <Button onClick={() => setTitle('You Are God Damn Right!!')}>
+        <Button
+          color="success"
+          onClick={() => setTitle('You Are God Damn Right!!')}
+        >
           {' '}
           Heisenberg{' '}
         </Button>

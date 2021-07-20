@@ -6,10 +6,10 @@ const CardHolder = ({ children, title }) => {
     <div>
       <Card>
         <CardBody>
-          <CardTitle className="center" tag="h5">
+          <CardTitle className="text-center" tag="h5">
             {title}
           </CardTitle>
-          <CardText>{children}</CardText>
+          <CardText className="text-center">{children}</CardText>
         </CardBody>
       </Card>
     </div>

@@ -2,7 +2,8 @@ import React from 'react';
 import './style.css';
 
 import CardHolder from './components/CardHolder';
-import StateExample from './hooks/StateExample';
+import StateExample from './hooks/StateExample/StateExample';
+import UseEffectExample from './hooks/UseEffectExample/UseEffectExample';
 
 export default function App() {
   return (
@@ -12,6 +13,10 @@ export default function App() {
 
       <CardHolder title={'useState Blitz'}>
         <StateExample />
+      </CardHolder>
+
+      <CardHolder title={'useEffect Blitz'}>
+        <UseEffectExample />
       </CardHolder>
     </div>
   );
