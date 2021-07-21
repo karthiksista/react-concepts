@@ -5,12 +5,13 @@ import CardHolder from './components/CardHolder';
 import StateExample from './hooks/StateExample/StateExample';
 import UseEffectExample from './hooks/UseEffectExample/UseEffectExample';
 import UseReducerExample from './hooks/UseReducerExample/UseReducerExample';
+import UseRefExample from './hooks/UseRefExample/UseRefExample';
+import UseCallBackExample from './hooks/UseCallbackExample/UseCallbackExample';
 
 export default function App() {
   return (
     <div>
-      <h1>React Drive Thru!</h1>
-      <p>Start Plating Around to see some magic happen :)</p>
+      <h1 className="text-center">React Drive Thru!</h1>
 
       <CardHolder title={'useState Blitz'}>
         <StateExample />
@@ -22,6 +23,14 @@ export default function App() {
 
       <CardHolder title={'useReducer Blitz'}>
         <UseReducerExample />
+      </CardHolder>
+
+      <CardHolder title={'useRef Blitz'}>
+        <UseRefExample />
+      </CardHolder>
+
+      <CardHolder title={'useCallback Blitz'}>
+        <UseCallBackExample />
       </CardHolder>
     </div>
   );

@@ -14,17 +14,13 @@ const UseEffectExample = () => {
   }, [id]);
 
   const getUsers = () => {
-    console.log('Name', Math.floor(Math.random() * 10) + 1);
-
     setId(Math.floor(Math.random() * 10) + 1);
   };
 
-  console.log('UsedEffect Render');
   return (
     <div>
       <div style={{ padding: '10px' }}>UserName: {name}</div>
       <Button color="primary" onClick={() => getUsers()}>
-        {' '}
         Get Random User Name
       </Button>
     </div>

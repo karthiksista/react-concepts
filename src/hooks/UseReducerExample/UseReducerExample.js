@@ -28,8 +28,6 @@ const UseReducerExample = () => {
 
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  console.log('UseReducer Render');
-
   return (
     <>
       <div>How Many Times Have You Rewatched The Office ? : {state.count}</div>
